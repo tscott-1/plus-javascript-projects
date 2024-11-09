@@ -31,6 +31,8 @@ const addItem = () => {
 };
 
 const clearItems = () => {
-    let listElement = document.getElementById("shopping-list-items");
-    listElement.innerHTML = "";
+    shoppingListItems = []
+    updateItems()
+    // let listElement = document.getElementById("shopping-list-items");
+    // listElement.innerHTML = "";
 }

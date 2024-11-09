@@ -30,11 +30,9 @@ const subtract = (step) => {
   const custom = () => {
     // We gave the number element an id of number so we can use that to get the element
     let numberElement = document.getElementById("number");
-    let customStep = document.getElementById("step");
+    let customStep = document.getElementById("step").value;
         // We can use the innerText property to get the text inside the element
     let number = numberElement.innerText;
-    let step = customStep.innerText;
-        // number = parseInt(number) + parseInt(step);
-        number = parseInt(step);
+        number = parseInt(number) + parseInt(customStep);
         numberElement.innerText = number;
   };
